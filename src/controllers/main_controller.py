@@ -47,6 +47,8 @@ class Controller:
                 status = student_list.add_student()
             elif choice == '4':
                 roll = input("Enter roll number: ")
+                # update profile
+                student_list.update_student(roll)
                 
             elif choice == '5':
                 roll = input("Enter roll number: ")

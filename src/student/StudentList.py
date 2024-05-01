@@ -141,4 +141,25 @@ class StudentList:
         print("Student deleted successfully!")
         status = True
         return status
+    
+    def update_student(self, new_name, new_birth, new_hometown):
+        self.name = new_name
+        self.year = new_birth
+        self.hometown = new_hometown
+        
+        roll = input("Enter the student id you want to update the profile for: ")
+        if roll in Student :
+            print("The student profile:")
+            Student[roll].print_student()
+
+        # edit profile
+            Student[roll].update_student(new_name, new_birth, new_hometown)
+
+            print("Student information after updating:")
+            Student[roll].print_student()
+        else:
+            print("Invalid student information!")
+
+                
+
             
